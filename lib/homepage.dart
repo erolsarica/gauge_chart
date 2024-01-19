@@ -22,40 +22,69 @@ class HomePage extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.all(40),
           child: SfRadialGauge(
+            enableLoadingAnimation: true,
+            animationDuration: 3000,
             axes: <RadialAxis>[
               RadialAxis(
                 
-                maximum: 40,
-                interval: 2,
+                maximum: 220,
+                interval: 20,
                 labelsPosition: ElementsPosition.outside,
                 ranges: <GaugeRange>[
                   GaugeRange(
                     startValue: 0,
-                    endValue: 10,
+                    endValue: 60,
                     color: Colors.green,
                     startWidth: 10,
                     endWidth: 10,
                   ),
                   GaugeRange(
-                    startValue: 10,
-                    endValue: 20,
+                    startValue: 60,
+                    endValue: 120,
                     color: Colors.yellow,
                     startWidth: 10,
                     endWidth: 10,
                   ),
                   GaugeRange(
-                    startValue: 20,
-                    endValue: 30,
+                    startValue: 120,
+                    endValue: 160,
                     color: Colors.orange,
                     startWidth: 10,
                     endWidth: 10,
                   ),
                   GaugeRange(
-                    startValue: 30,
-                    endValue: 40,
+                    startValue: 160,
+                    endValue: 220,
                     color: Colors.red,
                     startWidth: 10,
                     endWidth: 10,
+                  ),
+                ],
+                pointers: const <GaugePointer>[
+                  NeedlePointer(
+                    value: 140,
+                    enableAnimation: true,
+                    animationDuration: 6000,
+                    animationType: AnimationType.ease,
+                    needleLength: 0.66,
+                    needleColor: Colors.black,
+                    knobStyle: KnobStyle(
+                      knobRadius: 0.08,
+                      sizeUnit: GaugeSizeUnit.factor,
+                    ),
+                  ),
+                ],
+                annotations: const <GaugeAnnotation>[
+                  GaugeAnnotation(
+                    widget: Text(
+                      '140',
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    angle: 90,
+                    positionFactor: 0.5,
                   ),
                 ],
               ),
