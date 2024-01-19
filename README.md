@@ -1,16 +1,8 @@
 # gauge_chart
 
-A new Flutter project.
+Gauge Chart Example
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Gauge chart example with animation.![Simulator Screenshot - iPhone 15 Pro - 2024-01-19 at 22 40 42](https://github.com/erolsarica/gauge_chart/assets/61289802/a9c95707-d4fb-48f8-b06e-21f86c498f9a)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
